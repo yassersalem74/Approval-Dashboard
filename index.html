@@ -1,11 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/style/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- header  -->
+        <div class="header">
+            <div class="right-side">
+                <div class="img-logo"><img src="/images/logo.png"
+                        alt="logo-image"></div>
+                <div class="right-side-titles blue-color">
+                    <p>شركة تداوي الطبية <span
+                            class="red-color">(فرع)</span></p>
+                    <p>Tadawi Medical <span class="red-color">(Gnp)</span></p>
+                </div>
+            </div>
+
+            <div class="left-side">
+                <p class="time secondary-color" dir="ltr">12:52:30 AM</p>
+                <div class="time-icon blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- table  -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="line-height number-cell">
+                            <p>م</p>
+                            <p>N</p>
+                        </th>
+                        <th class="line-height">
+                            <p>رقم الملف</p>
+                            <p> File Number</p>
+                        </th>
+                        <th class="line-height">
+                            <p>القسم</p>
+                            <p>Department</p>
+                        </th>
+                        <th class="line-height">
+                            <p>شركة التامين</p>
+                            <p>Insurance Company</p>
+                        </th>
+                        <th class="line-height">
+                            <p>زمن الانتظار</p>
+                            <p>Waiting Time</p>
+                        </th>
+                        <th class="line-height">
+                            <p>الحاله</p>
+                            <p>Status</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status pending">Under Progress / قيد
+                                    الإجراء</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status approved">Approved / تم
+                                    القبول</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status refused">Not Approved / مرفوض
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status partial-approve">Partial
+                                    Approved / قيد الإجراء جزئياً </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status pending">Under Progress / قيد
+                                    الإجراء</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status approved">Approved / تم
+                                    القبول</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status refused">Not Approved / مرفوض
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1</td>
+                        <td class="font-bolder-700">1234567</td>
+                        <td>مريض خارجي / Outpatient</td>
+                        <td><img src="/images/company.png"
+                                alt="company-image"></td>
+                        <td class="font-bolder-600">11:29</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status partial-approve">Partial
+                                    Approved / قيد الإجراء جزئياً </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>

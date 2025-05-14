@@ -1,0 +1,159 @@
+/* variables  */
+:root {
+  --blue-color: #1053a2;
+  --red-color: #d12e2e;
+  --secondary-color: #70757b;
+  --odd-color: #e7eef6;
+  --even-color: white;
+  --pending-color: #f4f3b480;
+  --approved-color: #b1eec480;
+  --refused-color: #ffb9b980;
+  --partial-approve-color: #77b2f780;
+}
+
+.blue-color {
+  color: var(--blue-color);
+}
+
+.red-color {
+  color: var(--red-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.font-bolder-500 {
+  font-weight: 500;
+}
+
+.font-bolder-600 {
+  font-weight: 600;
+}
+
+.font-bolder-700 {
+  font-weight: 700;
+}
+
+.pending {
+  background-color: var(--pending-color);
+}
+
+.approved {
+  background-color: var(--approved-color);
+}
+
+.refused {
+  background-color: var(--refused-color);
+}
+
+.partial-approve {
+  background-color: var(--partial-approve-color);
+}
+
+/* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
+
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0 24px;
+}
+/* header  */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.img-logo {
+  width: 137px;
+  height: 66px;
+}
+
+.img-logo img {
+  width: 100%;
+}
+.right-side-titles {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+.time {
+  font-size: 28px;
+}
+
+.time-icon {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+/* header responsive  */
+
+@media screen and (max-width: 668px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+/* table  */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(225, 221, 221);
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.line-height {
+  line-height: 22px;
+}
+thead tr th {
+  background-color: var(--blue-color);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+thead tr th {
+  padding: 0px 0px;
+}
+th,
+td {
+  text-align: center;
+  /* padding: 12px 12px; */
+  padding: 8px 12px 0px 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--odd-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--even-color);
+}
+
+.number-cell {
+  width: 10%;
+}
+
+.status-content {
+  display: flex;
+  justify-content: center;
+}
+.status {
+  padding: 4px 8px;
+  width: 55%;
+}
